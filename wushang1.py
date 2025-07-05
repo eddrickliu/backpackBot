@@ -11,6 +11,8 @@ from datetime import datetime
 from typing import Dict, List, Optional, Tuple
 import logging
 from enums import RequestEnums
+from dotenv import load_dotenv
+import os
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -963,8 +965,9 @@ async def main():
         return
     
     # IMPORTANT: Use your actual API credentials here
-    API_KEY = ''
-    API_SECRET = ''
+    load_dotenv()
+    API_KEY = os.getenv("API_KEY");
+    API_SECRET = os.getenv("SECRET_KEY")
     
     client = AuthenticationClient(API_KEY, API_SECRET)
     
