@@ -1,0 +1,3 @@
+backpack_exchange_sdk
+numpy
+# python-dotenv

@@ -1,0 +1,58 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment & config files
+*.env
+.env.*
+secrets.json
+config.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.log.*
+logs/
+*.pid
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb.rtf
+
+# Notebooks and temp files
+*.bak
+*.tmp
+*~
+
+# VSCode & PyCharm
+.vscode/
+.idea/
+
+# Test output
+coverage/
+*.cover
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# MyPy & linting
+.mypy_cache/
+.pytest_cache/
+.cache/
+
+# System folders
+.qodo/
